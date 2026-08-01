@@ -9,3 +9,5 @@ function Book(title, author, pages, read) {
     return `${this.title} by ${author}, ${this.pages} pages, ${readStatus}`;
   };
 }
+
+const theHobbit('The Hobbit', 'J.R.R. Tolkien', 295, false);
