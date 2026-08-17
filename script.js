@@ -29,3 +29,5 @@ myLibrary.push(atomicHabits);
 card.classList.add('book-card');
 card.appendChild(title);
 bookGrid.appendChild(card);
+
+title.textContent = theHobbit.title;
