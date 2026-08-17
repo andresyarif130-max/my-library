@@ -3,10 +3,6 @@ const bookGrid = document.querySelector('#bookGrid');
 const card = document.createElement('div');
 const title = document.createElement('h3');
 
-card.classList.add('book-card');
-card.appendChild(title);
-bookGrid.appendChild(card);
-
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
@@ -29,3 +25,7 @@ myLibrary.push(theHobbit);
 // Test for Terminal
 const atomicHabits = new Book('Atomic Habits', 'James Clear', 320, true);
 myLibrary.push(atomicHabits);
+
+card.classList.add('book-card');
+card.appendChild(title);
+bookGrid.appendChild(card);
