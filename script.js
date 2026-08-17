@@ -4,6 +4,7 @@ const card = document.createElement('div');
 const title = document.createElement('h3');
 
 card.classList.add('book-card');
+card.appendChild(title);
 
 function Book(title, author, pages, read) {
   this.title = title;
