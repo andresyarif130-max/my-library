@@ -1,3 +1,5 @@
+const bookGrid = document.querySelector('#bookGrid');
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
