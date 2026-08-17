@@ -61,3 +61,17 @@ main {
     gap: 25px;
     padding-bottom: 50px;
 }
+
+.book-card {
+    padding: 25px;
+    background: #181b24;
+    border: 1px solid #292d38;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    border-color: #8b5cf6;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
