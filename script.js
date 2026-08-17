@@ -5,6 +5,7 @@ const title = document.createElement('h3');
 
 card.classList.add('book-card');
 card.appendChild(title);
+bookGrid.appendChild(card);
 
 function Book(title, author, pages, read) {
   this.title = title;
