@@ -1,5 +1,7 @@
 const bookGrid = document.querySelector('#bookGrid');
 
+const card = document.createElement('div');
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
