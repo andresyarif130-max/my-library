@@ -8,8 +8,8 @@ const status = document.createElement('p');
 
 card.classList.add('book-card');
 
-card.appendChild(title);
 bookGrid.appendChild(card);
+card.appendChild(title);
 card.appendChild(author);
 card.appendChild(pages);
 card.appendChild(status);
