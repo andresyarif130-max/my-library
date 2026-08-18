@@ -32,6 +32,9 @@ console.log(theHobbit.info());
 // End test for Terminal
 const myLibrary = [];
 myLibrary.push(theHobbit);
+myLibrary.forEach(book) => {
+  console.log(book);
+}
 
 // Test for Terminal
 const atomicHabits = new Book('Atomic Habits', 'James Clear', 320, true);
