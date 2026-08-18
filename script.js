@@ -25,22 +25,23 @@ Book.prototype.info = function () {
   const readStatus = this.read ? 'read' : 'not read yet';
   return `${this.title} by ${this.author}, ${this.pages} pages, ${readStatus}`;
 };
-// Test for Terminal
+
 const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
 
-console.log(theHobbit.info());
-// End test for Terminal
-const myLibrary = [];
-myLibrary.push(theHobbit);
-myLibrary.forEach(book) => {
-  console.log(book);
-}
-
-// Test for Terminal
 const atomicHabits = new Book('Atomic Habits', 'James Clear', 320, true);
+
+const myLibrary = [];
+
+myLibrary.push(theHobbit);
 myLibrary.push(atomicHabits);
 
-title.textContent = theHobbit.title;
-author.textContent = theHobbit.author;
-pages.textContent = `${theHobbit.pages} pages`;
-status.textContent = theHobbit.read ? 'Read' : 'Not read yet';
+myLibrary.forEach((book) => {
+  console.log(book.info());
+});
+
+// Test for Terminal
+
+title.textContent = Book.title;
+author.textContent = Book.author;
+pages.textContent = `${Book.pages} pages`;
+status.textContent = Book.read ? 'Read' : 'Not read yet';
