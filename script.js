@@ -3,6 +3,7 @@ const bookGrid = document.querySelector('#bookGrid');
 const card = document.createElement('div');
 const title = document.createElement('h3');
 const author = document.createElement('p');
+const pages = document.createElement('p');
 
 card.classList.add('book-card');
 
