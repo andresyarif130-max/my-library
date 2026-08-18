@@ -1,19 +1,5 @@
 const bookGrid = document.querySelector('#bookGrid');
 
-const card = document.createElement('div');
-const title = document.createElement('h3');
-const author = document.createElement('p');
-const pages = document.createElement('p');
-const status = document.createElement('p');
-
-card.classList.add('book-card');
-
-bookGrid.appendChild(card);
-card.appendChild(title);
-card.appendChild(author);
-card.appendChild(pages);
-card.appendChild(status);
-
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
@@ -36,14 +22,30 @@ myLibrary.push(theHobbit);
 myLibrary.push(atomicHabits);
 
 function displayBooks() {
+  bookGrid.innerHTML = '';
   myLibrary.forEach((book) => {
-    console.log(book.info());
+    const card = document.createElement('div');
+    card.classList.add('book-card');
+
+    const title = document.createElement('h3');
+    title.textContent = book.title;
+
+    const author = document.createElement('p');
+    author.textContent = book.author;
+
+    const pages = document.createElement('p');
+    pages.textContent = `${book.pages} pages`;
+
+    const status = document.createElement('p');
+    status.textContent = book.read ? 'Read' : 'Not read yet';
+
+    card.appendChild(title);
+    card.appendChild(author);
+    card.appendChild(pages);
+    card.appendChild(status);
+
+    bookGrid.appendChild(card);
   });
 }
 
-// Test for Terminal
-
-title.textContent = Book.title;
-author.textContent = Book.author;
-pages.textContent = `${Book.pages} pages`;
-status.textContent = Book.read ? 'Read' : 'Not read yet';
+displayBooks();
