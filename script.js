@@ -35,9 +35,11 @@ const myLibrary = [];
 myLibrary.push(theHobbit);
 myLibrary.push(atomicHabits);
 
-myLibrary.forEach((book) => {
-  console.log(book.info());
-});
+function displayBooks() {
+  myLibrary.forEach((book) => {
+    console.log(book.info());
+  });
+}
 
 // Test for Terminal
 
