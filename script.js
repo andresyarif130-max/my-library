@@ -1,4 +1,5 @@
 const bookGrid = document.querySelector('#bookGrid');
+const bookForm = document.querySelector('#bookForm');
 
 function Book(title, author, pages, read) {
   this.id = crypto.randomUUID();
