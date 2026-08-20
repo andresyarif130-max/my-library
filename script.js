@@ -46,12 +46,10 @@ function displayBooks() {
     status.textContent = book.read ? 'Read' : 'Not read yet';
     card.appendChild(status);
 
-    bookGrid.appendChild(card);
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('delete-button');
     card.appendChild(deleteButton);
-
     deleteButton.addEventListener('click', () => {
       const bookId = book.id;
 
@@ -62,6 +60,8 @@ function displayBooks() {
 
       displayBooks();
     });
+
+    bookGrid.appendChild(card);
   });
 }
 
