@@ -157,6 +157,12 @@ main {
     color: #0f1117;
 }
 
-.read, .unread {
+.read {
     font-weight: 700;
+    color: #16a34a;
+}
+
+.unread {
+    font-weight: 700;
+    color: #dc2626;
 }
