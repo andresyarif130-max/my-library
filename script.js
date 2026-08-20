@@ -103,6 +103,8 @@ bookForm.addEventListener('submit', (event) => {
   displayBooks();
 
   bookForm.reset();
+
+  bookFormSection.classList.remove('show');
 });
 
 newBookBtn.addEventListener('click', () => {
