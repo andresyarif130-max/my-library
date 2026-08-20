@@ -161,12 +161,12 @@ main {
     cursor: pointer;
 }
 
-.read {
+.book-card p.read {
     font-weight: 700;
     color: #16a34a;
 }
 
-.unread {
+.book-card p.unread {
     font-weight: 700;
     color: #dc2626;
 }
