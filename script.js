@@ -28,6 +28,8 @@ function displayBooks() {
     const card = document.createElement('div');
     card.classList.add('book-card');
 
+    card.dataset.id = book.id;
+
     const title = document.createElement('h3');
     title.textContent = book.title;
 
