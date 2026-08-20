@@ -52,6 +52,7 @@ function displayBooks() {
 
     const status = document.createElement('p');
     status.textContent = book.read ? 'Read' : 'Not read yet';
+    status.classList.add(book.read ? 'read' : 'unread');
     card.appendChild(status);
 
     const deleteButton = document.createElement('button');
