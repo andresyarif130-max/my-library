@@ -126,3 +126,13 @@ main {
 .delete-button:hover {
     transform: translateY(-2px);
 }
+
+.read-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.read-button:hover {
+    transform: translateY(-2px);
+}
+
