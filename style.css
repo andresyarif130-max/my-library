@@ -154,7 +154,11 @@ main {
 }
 
 #bookForm label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #0f1117;
+    cursor: pointer;
 }
 
 .read {
