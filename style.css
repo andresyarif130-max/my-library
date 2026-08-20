@@ -63,11 +63,18 @@ main {
 }
 
 .book-card {
-    padding: 25px;
-    background: #181b24;
-    border: 1px solid #292d38;
-    border-radius: 18px;
-    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: white;
+    color: #292d38;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .book-card:hover {
