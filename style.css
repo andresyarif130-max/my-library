@@ -78,9 +78,9 @@ main {
 }
 
 .book-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     border-color: #8b5cf6;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
 }
 
 .book-form-section {
