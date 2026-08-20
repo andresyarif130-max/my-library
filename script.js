@@ -61,6 +61,11 @@ function displayBooks() {
       displayBooks();
     });
 
+    const readButton = document.createElement('button');
+    readButton.textContent = book.read ? 'Mark as unread' : 'Mark as read';
+    readButton.classList.add('read-button');
+    card.appendChild(readButton);
+
     bookGrid.appendChild(card);
   });
 }
