@@ -142,3 +142,10 @@ main {
     transform: translateY(-2px);
 }
 
+#bookForm label {
+    color: #0f1117;
+}
+
+.read, .unread {
+    font-weight: 700;
+}
