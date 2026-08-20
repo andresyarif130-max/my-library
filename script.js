@@ -32,27 +32,25 @@ function displayBooks() {
 
     const title = document.createElement('h3');
     title.textContent = book.title;
+    card.appendChild(title);
 
     const author = document.createElement('p');
     author.textContent = book.author;
+    card.appendChild(author);
 
     const pages = document.createElement('p');
     pages.textContent = `${book.pages} pages`;
+    card.appendChild(pages);
 
     const status = document.createElement('p');
     status.textContent = book.read ? 'Read' : 'Not read yet';
+    card.appendChild(status);
 
+    bookGrid.appendChild(card);
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('delete-button');
-
-    card.appendChild(title);
-    card.appendChild(author);
-    card.appendChild(pages);
-    card.appendChild(status);
     card.appendChild(deleteButton);
-
-    bookGrid.appendChild(card);
 
     deleteButton.addEventListener('click', () => {
       const bookId = book.id;
