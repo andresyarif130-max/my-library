@@ -117,3 +117,12 @@ main {
         transform 0.2s ease,
         box-shadow 0.2s ease;
 }
+
+.delete-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.delete-button:hover {
+    transform: translateY(-2px);
+}
