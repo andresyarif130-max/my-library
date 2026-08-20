@@ -61,6 +61,8 @@ function displayBooks() {
         return book.id === bookId;
       });
       myLibrary.splice(index, 1);
+
+      displayBooks();
     });
   });
 }
