@@ -21,14 +21,7 @@ Book.prototype.info = function () {
   return `${this.title} by ${this.author}, ${this.pages} pages, ${readStatus}`;
 };
 
-const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
-
-const atomicHabits = new Book('Atomic Habits', 'James Clear', 320, true);
-
 const myLibrary = [];
-
-myLibrary.push(theHobbit);
-myLibrary.push(atomicHabits);
 
 function displayBooks() {
   bookGrid.innerHTML = '';
