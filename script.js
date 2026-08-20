@@ -1,5 +1,6 @@
 const bookGrid = document.querySelector('#bookGrid');
 const bookForm = document.querySelector('#bookForm');
+const newBookBtn = document.querySelector('#newBookBtn');
 
 const titleInput = document.querySelector('#titleInput');
 const authorInput = document.querySelector('#authorInput');
