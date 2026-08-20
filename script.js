@@ -90,6 +90,10 @@ bookForm.addEventListener('submit', (event) => {
   const pages = Number(pagesInput.value);
   const read = readInput.checked;
 
+  if (!title || !author || pages <= 0) {
+    return;
+  }
+
   const newBook = new Book(title, author, pages, read);
 
   myLibrary.push(newBook);
