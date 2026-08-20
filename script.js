@@ -95,6 +95,8 @@ bookForm.addEventListener('submit', (event) => {
   myLibrary.push(newBook);
 
   displayBooks();
+
+  bookForm.reset();
 });
 
 displayBooks();
