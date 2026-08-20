@@ -1,6 +1,7 @@
 const bookGrid = document.querySelector('#bookGrid');
 const bookForm = document.querySelector('#bookForm');
 const newBookBtn = document.querySelector('#newBookBtn');
+const bookFormSection = document.querySelector('.book-form-section');
 
 const titleInput = document.querySelector('#titleInput');
 const authorInput = document.querySelector('#authorInput');
@@ -102,6 +103,10 @@ bookForm.addEventListener('submit', (event) => {
   displayBooks();
 
   bookForm.reset();
+});
+
+newBookBtn.addEventListener('click', () => {
+  bookFormSection.classList.toggle('show');
 });
 
 displayBooks();
