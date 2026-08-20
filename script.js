@@ -66,7 +66,10 @@ function displayBooks() {
     readButton.textContent = book.read ? 'Mark as unread' : 'Mark as read';
     readButton.classList.add('read-button');
     card.appendChild(readButton);
-    readButton;
+
+    readButton.addEventListener('click', () => {
+      book.read = !book.read;
+    });
 
     bookGrid.appendChild(card);
   });
