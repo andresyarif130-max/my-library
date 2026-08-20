@@ -53,6 +53,10 @@ function displayBooks() {
     card.appendChild(deleteButton);
 
     bookGrid.appendChild(card);
+
+    deleteButton.addEventListener('click', () => {
+      console.log('Delete clicked');
+    });
   });
 }
 
