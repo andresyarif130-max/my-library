@@ -42,10 +42,15 @@ function displayBooks() {
     const status = document.createElement('p');
     status.textContent = book.read ? 'Read' : 'Not read yet';
 
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('delete-button');
+
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(pages);
     card.appendChild(status);
+    card.appendChild(deleteButton);
 
     bookGrid.appendChild(card);
   });
