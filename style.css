@@ -77,6 +77,16 @@ main {
         box-shadow 0.2s ease;
 }
 
+.book-card h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.book-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
 .book-card:hover {
     transform: translateY(-6px);
     border-color: #8b5cf6;
