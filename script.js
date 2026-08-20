@@ -93,6 +93,8 @@ bookForm.addEventListener('submit', (event) => {
   const newBook = new Book(title, author, pages, read);
 
   myLibrary.push(newBook);
+
+  displayBooks();
 });
 
 displayBooks();
