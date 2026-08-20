@@ -1,6 +1,11 @@
 const bookGrid = document.querySelector('#bookGrid');
 const bookForm = document.querySelector('#bookForm');
 
+const titleInput = document.querySelector('#titleInput');
+const authorInput = document.querySelector('#authorInput');
+const pagesInput = document.querySelector('#pagesInput');
+const readInput = document.querySelector('#readInput');
+
 function Book(title, author, pages, read) {
   this.id = crypto.randomUUID();
   this.title = title;
