@@ -111,3 +111,9 @@ main {
     border-color: #d946ef;
     box-shadow: 0 0 0 3px rgba(217, 70, 239, 0.15);
 }
+
+#bookForm button {
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
