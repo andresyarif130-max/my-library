@@ -89,6 +89,8 @@ bookForm.addEventListener('submit', (event) => {
   const author = authorInput.value;
   const pages = Number(pagesInput.value);
   const read = readInput.checked;
+
+  const newBook = new Book(title, author, pages, read);
 });
 
 displayBooks();
