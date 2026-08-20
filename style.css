@@ -95,3 +95,13 @@ main {
     background: white;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
+
+#bookForm input[type='text'], 
+#bookForm input[type='number'] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
