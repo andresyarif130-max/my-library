@@ -91,6 +91,8 @@ bookForm.addEventListener('submit', (event) => {
   const read = readInput.checked;
 
   const newBook = new Book(title, author, pages, read);
+
+  myLibrary.push(newBook);
 });
 
 displayBooks();
