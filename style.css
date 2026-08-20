@@ -76,8 +76,22 @@ main {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.book-form-section {display: none;}
+.book-form-section {
+    display: none;
+    max-width: 600px;
+    margin: 30px auto;
+}
 
 .book-form-section.show {
     display: block;
+}
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
