@@ -77,6 +77,8 @@ function displayBooks() {
   });
 }
 
-bookForm.addEventListener('submit', (event) => {});
+bookForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+});
 
 displayBooks();
