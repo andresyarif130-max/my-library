@@ -105,3 +105,9 @@ main {
     font-size: 1rem;
     box-sizing: border-box;
 }
+
+#bookForm input:focus {
+    outline: none;
+    border-color: #d946ef;
+    box-shadow: 0 0 0 3px rgba(217, 70, 239, 0.15);
+}
