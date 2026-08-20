@@ -56,7 +56,11 @@ function displayBooks() {
 
     deleteButton.addEventListener('click', () => {
       const bookId = book.id;
-      console.log(bookId);
+
+      const index = myLibrary.findIndex((book) => {
+        return book.id === bookId;
+      });
+      myLibrary.splice(index, 1);
     });
   });
 }
