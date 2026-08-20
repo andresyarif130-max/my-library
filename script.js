@@ -69,6 +69,7 @@ function displayBooks() {
 
     readButton.addEventListener('click', () => {
       book.read = !book.read;
+      displayBooks();
     });
 
     bookGrid.appendChild(card);
