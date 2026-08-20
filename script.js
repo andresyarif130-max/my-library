@@ -84,6 +84,11 @@ function displayBooks() {
 
 bookForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  const title = titleInput.value;
+  const author = authorInput.value;
+  const pages = Number(pagesInput.value);
+  const read = readInput.checked;
 });
 
 displayBooks();
