@@ -50,6 +50,7 @@ function displayBooks() {
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('delete-button');
     card.appendChild(deleteButton);
+
     deleteButton.addEventListener('click', () => {
       const bookId = book.id;
 
@@ -65,6 +66,7 @@ function displayBooks() {
     readButton.textContent = book.read ? 'Mark as unread' : 'Mark as read';
     readButton.classList.add('read-button');
     card.appendChild(readButton);
+    readButton;
 
     bookGrid.appendChild(card);
   });
