@@ -96,7 +96,7 @@ main {
 .book-form-section {
     display: none;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 30px auto 50px;
 }
 
 .book-form-section.show {
